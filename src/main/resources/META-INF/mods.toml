@@ -1,0 +1,32 @@
+
+modLoader="javafml" 
+loaderVersion="[43,)" 
+
+license="All rights reserved"
+
+[[mods]] 
+
+modId="soundsofjoining" 
+version="${file.jarVersion}" 
+displayName="Sounds of Joining" 
+logoFile="examplemod.png" 
+credits="me" 
+authors="me" 
+
+description='''
+a mod that allows modded server owners to play a sound when a certain player joins.
+'''
+[[dependencies.soundsofjoining]] 
+    modId="forge" 
+    mandatory=true 
+    versionRange="[43,)" 
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.soundsofjoining]]
+    modId="minecraft"
+    mandatory=true
+
+    versionRange="[1.19.2,1.20)"
+    ordering="NONE"
+    side="BOTH"
