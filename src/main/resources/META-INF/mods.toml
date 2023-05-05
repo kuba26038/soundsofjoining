@@ -7,11 +7,11 @@ license="All rights reserved"
 [[mods]] 
 
 modId="soundsofjoining" 
-version="${file.jarVersion}" 
+version="1.0"
 displayName="Sounds of Joining" 
-logoFile="examplemod.png" 
-credits="me" 
-authors="me" 
+logoFile=""
+credits="SammySemicolon, GiantLuigi, BabyBlueSheep and Arathian for answering any of my questions, you people are awesome"
+authors="TheKuba"
 
 description='''
 a mod that allows modded server owners to play a sound when a certain player joins.
@@ -27,6 +27,6 @@ a mod that allows modded server owners to play a sound when a certain player joi
     modId="minecraft"
     mandatory=true
 
-    versionRange="[1.19.2,1.20)"
+    versionRange="1.19.2"
     ordering="NONE"
     side="BOTH"

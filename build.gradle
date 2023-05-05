@@ -17,7 +17,7 @@ java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 println "Java: ${System.getProperty 'java.version'}, JVM: ${System.getProperty 'java.vm.version'} (${System.getProperty 'java.vendor'}), Arch: ${System.getProperty 'os.arch'}"
 minecraft {
     mappings channel: 'parchment', version: '2022.08.14-1.19.2'
-    //mappings channel: 'official', version: '1.19.2'
+    //mappings channel: 'official', version: '1.19.2' mappings channel: 'parchment', version: '2022.08.14-1.19.2'
     // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg') // Currently, this location cannot be changed from the default.
     runs {
         client {
@@ -70,7 +70,7 @@ minecraft {
             workingDirectory project.file('run')
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
-            args '--mod', 'soundsofjoining', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+            //args '--mod', 'soundsofjoining', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
                     mods {
                 soundsofjoining {
                     source sourceSets.main
@@ -84,10 +84,11 @@ minecraft {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
+
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.19.2-43.2.6'
+    minecraft 'net.minecraftforge:forge:1.19.2-43.2.8'
 }
 
 jar {
